@@ -1,0 +1,91 @@
+.body1{
+    color: aliceblue;
+    background-image: url(../../../asset/imgDev.jpg);
+    height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+          
+}
+.body1{
+  
+  opacity: 7;
+  position: absolute;
+  width: 100%;
+}
+.test{
+    color: aliceblue !important;
+}
+.nav{
+    color: white !important;
+    font-weight: bold;
+}
+.link{
+    color: white !important; 
+    text-decoration: none;
+    padding: 12px;
+    font-size: 15px;
+}
+.btn1{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: none !important;
+    --bs-btn-border-color: #4CAF50 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4CAF50 !important;
+    --bs-btn-hover-border-color: #4CAF50 !important;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4CAF50 !important;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg:#4CAF50 !important;
+    --bs-btn-disabled-border-color:#4CAF50 !important;
+}
+
+.btn2 {
+    margin-left: 36%;
+    --bs-btn-color: #fff;
+    --bs-btn-bg:  #4CAF50 !important;
+    --bs-btn-border-color: #4CAF50 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4CAF50 !important;
+    --bs-btn-hover-border-color: #4CAF50 !important;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4CAF50 !important;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg:#4CAF50 !important;
+    --bs-btn-disabled-border-color:#4CAF50 !important;
+}
+.icon{
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    margin: 5px;
+}
+.container-text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container-text p{
+    text-align: center;
+}
+
+.container-text Button{
+    text-align: center;
+}
+
+.container-text h3{
+    text-align: center;
+}
+.icon2{
+    text-align: center;
+    font-size: 35px;
+    
+}
