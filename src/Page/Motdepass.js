@@ -21,7 +21,7 @@ export default function Motdepass() {
         <div class="login-page">
             <div class="form">
                 <form  class="login-form">
-                    <input type="email" placeholder="Email" ref={emailRef} />
+                    <input type="email" placeholder="Email" required ref={emailRef} />
 
                     <button onClick={motDePassHandler}>Envoyer</button>
 

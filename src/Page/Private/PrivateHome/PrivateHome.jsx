@@ -1,7 +1,8 @@
 import React from "react";
 
-import './PrivateHome.css'
-
+import "./PrivateHome.css";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from 'react-bootstrap/Nav';
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Container from "react-bootstrap/Container";
@@ -21,7 +22,7 @@ export default function Acceil() {
   };
   return (
     <div className="body1">
-      <Navbar>
+      {/* <Navbar>
         <Container>
           <Navbar.Brand className="nav">StartUps</Navbar.Brand>
           <Navbar.Toggle />
@@ -37,6 +38,31 @@ export default function Acceil() {
                 Decoonect
               </Button>
             </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar> */}
+      <Navbar collapseOnSelect expand="lg"  variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">StartUps</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              
+                
+            </Nav>
+            <Nav>
+              <Nav.Link href="#deets">Home</Nav.Link>
+              <Nav.Link href="#deets">Feature</Nav.Link>
+              <Nav.Link href="#deets">team</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Contact
+              </Nav.Link>
+              <Button onClick={handelDeconnect} className="btn1">
+                {" "}
+                <CiLogout className="icon" />
+                Decoonect
+              </Button>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

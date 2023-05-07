@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
-import { auth } from "../../../firebase";
+
 import { Link, useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { toast } from "react-toastify";
 import { useAuth } from "../Context/AutContext";
 
 export default function Connexion() {
-  const { connexion } =  useAuth();
+  const { connexion } = useAuth();
 
   const emailRef = useRef();
   const psdRef = useRef();
@@ -14,11 +12,11 @@ export default function Connexion() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleDelayedSignIn = () => {
-    setIsLoading(true);
     const email = emailRef.current.value;
     const password = psdRef.current.value;
+    setIsLoading(true);
     setTimeout(() => {
-      if (email && password) {
+      if (email && password) { 
         const result = connexion(email, password);
         if (result) {
           result.finally(() => {
@@ -31,7 +29,6 @@ export default function Connexion() {
     }, 1000);
   };
 
-
   const onSubmit = (e) => {
     e.preventDefault();
     handleDelayedSignIn();
@@ -41,8 +38,13 @@ export default function Connexion() {
     <div className="login-page">
       <div className="form">
         <form onSubmit={onSubmit} className="login-form">
-          <input type="email" placeholder="Email" ref={emailRef} />
-          <input type="password" placeholder="mot de pass" ref={psdRef} />
+          <input type="email" required placeholder="Email" ref={emailRef} />
+          <input
+            type="password"
+            required
+            placeholder="mot de pass"
+            ref={psdRef}
+          />
           <button disabled={isLoading}>
             {isLoading ? "Loading..." : "Se connecter"}
           </button>
